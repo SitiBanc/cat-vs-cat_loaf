@@ -1,0 +1,17 @@
+version: "0.1.0"
+services:
+  dev-jupyter-lab:
+    container_name: cat-vs-cat-loaf-dev
+    image: hychen/cat-vs-cat-loaf:latest
+    # user: "1000" # replace with your UID
+    ports:
+      - "8888:8888"
+    volumes:
+      - ~/cat-vs-cat_loaf:/cat-vs-cat_loaf
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
