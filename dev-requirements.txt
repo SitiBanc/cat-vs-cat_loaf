@@ -1,12 +1,12 @@
-# Jupyterlab and other development tools
-jupyterlab
-jupyterlab_execute_time
+# Jupyter and other development tools
+jupyter
 black
 isort
 flake8
 mypy
 
 # Project-related packages
+tensorflow
 scikit-learn
 Pillow
 matplotlib
